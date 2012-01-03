@@ -1,0 +1,14 @@
+Demo application for Rabbit and Cloud Foundry
+
+To run the application:
+- Compile it using
+mvn package
+- Sign up for a Cloud Foundry account at http://cloudfoundry.com
+- Install vmc as described at http://start.cloudfoundry.com/tools/vmc/installing-vmc.html
+- Change to the target directory
+- Install the application using
+vmc push
+- A Java Spring application should be autodetected - this is fine.
+- Make sure to bind a RabbitMQ service to the application.
+- You can access the application at the URL defined during deployment.
+- You can just send messages and receive them again.
